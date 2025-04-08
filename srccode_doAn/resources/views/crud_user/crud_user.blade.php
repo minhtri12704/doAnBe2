@@ -71,10 +71,10 @@
 </style>
 
 <div class="container mt-5">
-  <h2 class="title">Quản lí người dùng</h2>
+  <h2 class="title">Quản lí nhân viên</h2>
   <div class="mb-3 text-end">
     <a href="{{ route('users.UserCreate') }}" class="btn-add">
-      <i class="fas fa-plus-circle me-1"></i> Thêm người dùng
+      <i class="fas fa-plus-circle me-1"></i> Thêm nhân viên
     </a>
   </div>
   <table class="table table-bordered text-center">
