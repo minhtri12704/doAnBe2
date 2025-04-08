@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::pqa4jQ8cSK2f9Nlh',
+            '_route' => 'generated::S98x9bM28kVX7kOv',
           ),
           1 => NULL,
           2 => 
@@ -116,33 +116,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/dashboard' => 
+      '/users' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'generated::7l1xlcGnKLvaQF7M',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/login' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'login',
+            '_route' => 'users.index',
           ),
           1 => NULL,
           2 => 
@@ -159,7 +139,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'user.authUser',
+            '_route' => 'users.store',
           ),
           1 => NULL,
           2 => 
@@ -172,145 +152,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/create' => 
+      '/UserCreate' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'user.createUser',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'user.postUser',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/read' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'user.readUser',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/delete' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'user.deleteUser',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/update' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'user.updateUser',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'user.postUpdateUser',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/list' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'user.list',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/signout' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'signout',
+            '_route' => 'users.UserCreate',
           ),
           1 => NULL,
           2 => 
@@ -330,7 +178,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::UsxEbO6m1548nBm4',
+            '_route' => 'generated::3mYQYnXKycq2dXj4',
           ),
           1 => NULL,
           2 => 
@@ -347,9 +195,87 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
+      0 => '{^(?|/users/([^/]++)(?|/(?|edit(*:33)|delete(*:46))|(*:54)))/?$}sDu',
     ),
     3 => 
     array (
+      33 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.editUser',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      46 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.deleteUser',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      54 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'users.updateUser',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => NULL,
+          1 => NULL,
+          2 => NULL,
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => 0,
+        ),
+      ),
     ),
     4 => NULL,
   ),
@@ -501,7 +427,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::pqa4jQ8cSK2f9Nlh' => 
+    'generated::S98x9bM28kVX7kOv' => 
     array (
       'methods' => 
       array (
@@ -524,7 +450,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::pqa4jQ8cSK2f9Nlh',
+        'as' => 'generated::S98x9bM28kVX7kOv',
       ),
       'fallback' => false,
       'defaults' => 
@@ -540,28 +466,28 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::7l1xlcGnKLvaQF7M' => 
+    'users.index' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'dashboard',
+      'uri' => 'users',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\CrudUserController@dashboard',
-        'controller' => 'App\\Http\\Controllers\\CrudUserController@dashboard',
+        'uses' => 'App\\Http\\Controllers\\UserCrudController@index',
+        'controller' => 'App\\Http\\Controllers\\UserCrudController@index',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::7l1xlcGnKLvaQF7M',
+        'as' => 'users.index',
       ),
       'fallback' => false,
       'defaults' => 
@@ -577,28 +503,28 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'login' => 
+    'users.UserCreate' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'login',
+      'uri' => 'UserCreate',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\CrudUserController@login',
-        'controller' => 'App\\Http\\Controllers\\CrudUserController@login',
+        'uses' => 'App\\Http\\Controllers\\UserCrudController@create',
+        'controller' => 'App\\Http\\Controllers\\UserCrudController@create',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'login',
+        'as' => 'users.UserCreate',
       ),
       'fallback' => false,
       'defaults' => 
@@ -614,27 +540,27 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'user.authUser' => 
+    'users.store' => 
     array (
       'methods' => 
       array (
         0 => 'POST',
       ),
-      'uri' => 'login',
+      'uri' => 'users',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\CrudUserController@authUser',
-        'controller' => 'App\\Http\\Controllers\\CrudUserController@authUser',
+        'uses' => 'App\\Http\\Controllers\\UserCrudController@postUser',
+        'controller' => 'App\\Http\\Controllers\\UserCrudController@postUser',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'user.authUser',
+        'as' => 'users.store',
       ),
       'fallback' => false,
       'defaults' => 
@@ -650,28 +576,28 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'user.createUser' => 
+    'users.editUser' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'create',
+      'uri' => 'users/{id}/edit',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\CrudUserController@createUser',
-        'controller' => 'App\\Http\\Controllers\\CrudUserController@createUser',
+        'uses' => 'App\\Http\\Controllers\\UserCrudController@editUser',
+        'controller' => 'App\\Http\\Controllers\\UserCrudController@editUser',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'user.createUser',
+        'as' => 'users.editUser',
       ),
       'fallback' => false,
       'defaults' => 
@@ -687,27 +613,27 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'user.postUser' => 
+    'users.deleteUser' => 
     array (
       'methods' => 
       array (
-        0 => 'POST',
+        0 => 'DELETE',
       ),
-      'uri' => 'create',
+      'uri' => 'users/{id}/delete',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\CrudUserController@postUser',
-        'controller' => 'App\\Http\\Controllers\\CrudUserController@postUser',
+        'uses' => 'App\\Http\\Controllers\\UserCrudController@deleteUser',
+        'controller' => 'App\\Http\\Controllers\\UserCrudController@deleteUser',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'user.postUser',
+        'as' => 'users.deleteUser',
       ),
       'fallback' => false,
       'defaults' => 
@@ -723,28 +649,27 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'user.readUser' => 
+    'users.updateUser' => 
     array (
       'methods' => 
       array (
-        0 => 'GET',
-        1 => 'HEAD',
+        0 => 'PUT',
       ),
-      'uri' => 'read',
+      'uri' => 'users/{id}',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\CrudUserController@readUser',
-        'controller' => 'App\\Http\\Controllers\\CrudUserController@readUser',
+        'uses' => 'App\\Http\\Controllers\\UserCrudController@updateUser',
+        'controller' => 'App\\Http\\Controllers\\UserCrudController@updateUser',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'user.readUser',
+        'as' => 'users.updateUser',
       ),
       'fallback' => false,
       'defaults' => 
@@ -760,191 +685,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'user.deleteUser' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'delete',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\CrudUserController@deleteUser',
-        'controller' => 'App\\Http\\Controllers\\CrudUserController@deleteUser',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'user.deleteUser',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'user.updateUser' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'update',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\CrudUserController@updateUser',
-        'controller' => 'App\\Http\\Controllers\\CrudUserController@updateUser',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'user.updateUser',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'user.postUpdateUser' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'update',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\CrudUserController@postUpdateUser',
-        'controller' => 'App\\Http\\Controllers\\CrudUserController@postUpdateUser',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'user.postUpdateUser',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'user.list' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'list',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\CrudUserController@listUser',
-        'controller' => 'App\\Http\\Controllers\\CrudUserController@listUser',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'user.list',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'signout' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => 'signout',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\CrudUserController@signOut',
-        'controller' => 'App\\Http\\Controllers\\CrudUserController@signOut',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'signout',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'generated::UsxEbO6m1548nBm4' => 
+    'generated::3mYQYnXKycq2dXj4' => 
     array (
       'methods' => 
       array (
@@ -960,13 +701,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:44:"function () {
     return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000005190000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000005140000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::UsxEbO6m1548nBm4',
+        'as' => 'generated::3mYQYnXKycq2dXj4',
       ),
       'fallback' => false,
       'defaults' => 
